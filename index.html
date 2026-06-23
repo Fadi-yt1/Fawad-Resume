@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fawad Ali — Sales Closer & Customer Support Specialist</title>
+<meta name="description" content="Fawad Ali — Closer, Customer Support Specialist & B2C Sales Specialist. Proven track record of exceeding targets across BPO and sales environments." />
+<meta property="og:title" content="Fawad Ali — Sales Closer" />
+<meta property="og:description" content="Closer | Customer Support Specialist | B2C Sales Specialist. Rawalpindi, Pakistan." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg-0:#070B1F;
+    --bg-1:#0C1230;
+    --panel:#10162E;
+    --card:#1A2244;
+    --card-hi:#222C57;
+    --line:#2A335F;
+    --gold:#FFC857;
+    --gold-dim:#C99A3C;
+    --peri:#7C95FF;
+    --peri-dim:#4E63C7;
+    --txt:#EAEDFF;
+    --muted:#8B93BC;
+    --muted-2:#646C95;
+    --display:'Space Grotesk',sans-serif;
+    --body:'Inter',sans-serif;
+    --mono:'Space Mono',monospace;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(1200px 700px at 80% -10%, rgba(124,149,255,.12), transparent 60%),
+      radial-gradient(900px 600px at -10% 30%, rgba(255,200,87,.07), transparent 55%),
+      var(--bg-0);
+    color:var(--txt);
+    font-family:var(--body);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{background:var(--gold);color:var(--bg-0)}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:inline-flex;
+    align-items:center;
+    gap:.7em;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold-dim)}
+
+  h2.section-title{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(1.9rem,4vw,2.9rem);
+    line-height:1.05;
+    letter-spacing:-.02em;
+    margin:.5rem 0 0;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 28px;
+    backdrop-filter:blur(14px);
+    background:linear-gradient(180deg, rgba(7,11,31,.85), rgba(7,11,31,.2));
+    border-bottom:1px solid transparent;
+    transition:border-color .4s, background .4s;
+  }
+  nav.scrolled{border-bottom:1px solid var(--line);background:rgba(7,11,31,.92)}
+  .brand{font-family:var(--display);font-weight:700;letter-spacing:.02em;font-size:1.05rem}
+  .brand span{color:var(--gold)}
+  .nav-links{display:flex;gap:26px}
+  .nav-links a{
+    color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:500;
+    transition:color .25s;position:relative;
+  }
+  .nav-links a:hover{color:var(--txt)}
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;
+    background:var(--gold);transition:width .25s;
+  }
+  .nav-links a:hover::after{width:100%}
+  @media(max-width:760px){.nav-links{display:none}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100vh;
+    display:flex;align-items:center;
+    perspective:1400px;
+    position:relative;
+    padding:120px 0 60px;
+  }
+  .hero-shapes{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+  .shape{position:absolute;border-radius:30%;opacity:.5;filter:blur(2px)}
+  .s1{width:230px;height:230px;left:6%;top:22%;background:radial-gradient(circle at 30% 30%, rgba(124,149,255,.5), transparent 70%)}
+  .s2{width:180px;height:180px;right:10%;bottom:18%;background:radial-gradient(circle at 40% 40%, rgba(255,200,87,.4), transparent 70%)}
+  .s3{width:120px;height:120px;right:30%;top:16%;background:radial-gradient(circle at 40% 40%, rgba(124,149,255,.35), transparent 70%)}
+
+  .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;width:100%;position:relative;z-index:2}
+  @media(max-width:880px){.hero-inner{grid-template-columns:1fr;gap:40px}}
+
+  .hero-copy h1{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(2.6rem,7vw,4.6rem);
+    line-height:.98;letter-spacing:-.03em;margin:18px 0 14px;
+  }
+  .hero-copy h1 .accent{
+    background:linear-gradient(120deg,var(--gold),#FFE0A0);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{font-size:1.08rem;color:var(--muted);max-width:30ch;margin-bottom:30px}
+  .hero-sub strong{color:var(--txt);font-weight:600}
+
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    font-family:var(--display);font-weight:600;font-size:.92rem;
+    padding:13px 24px;border-radius:12px;text-decoration:none;
+    display:inline-flex;align-items:center;gap:9px;
+    transition:transform .2s, box-shadow .25s, background .25s;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold);color:#1A1304;box-shadow:0 10px 30px -8px rgba(255,200,87,.5)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 38px -8px rgba(255,200,87,.6)}
+  .btn-ghost{border-color:var(--line);color:var(--txt);background:rgba(255,255,255,.02)}
+  .btn-ghost:hover{transform:translateY(-3px);border-color:var(--peri);background:rgba(124,149,255,.08)}
+
+  /* ---------- 3D BADGE ---------- */
+  .badge-stage{perspective:1100px;display:flex;justify-content:center}
+  .badge{
+    position:relative;width:300px;height:430px;
+    transform-style:preserve-3d;
+    transition:transform .15s ease-out;
+    will-change:transform;
+  }
+  .badge-face{
+    position:absolute;inset:0;border-radius:24px;
+    background:linear-gradient(160deg,var(--card-hi),var(--card) 60%, #141B3A);
+    border:1px solid var(--line);
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.06);
+    padding:26px;display:flex;flex-direction:column;
+    transform-style:preserve-3d;
+    overflow:hidden;
+  }
+  .badge-face::before{
+    content:"";position:absolute;top:-40%;left:-30%;width:160%;height:80%;
+    background:linear-gradient(180deg, rgba(255,255,255,.10), transparent);
+    transform:rotate(8deg);pointer-events:none;
+  }
+  .badge-clip{
+    width:58px;height:14px;border-radius:8px;background:var(--peri-dim);
+    margin:0 auto 22px;transform:translateZ(20px);
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
+  }
+  .badge-photo{
+    width:128px;height:128px;border-radius:50%;margin:0 auto;
+    transform:translateZ(50px);
+    background:
+      radial-gradient(circle at 35% 30%, var(--peri), var(--peri-dim) 60%, #20285A);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-weight:700;font-size:2.6rem;color:#fff;
+    border:3px solid rgba(255,255,255,.14);
+    box-shadow:0 18px 30px -12px rgba(0,0,0,.7);
+  }
+  .badge-name{
+    text-align:center;font-family:var(--display);font-weight:700;
+    font-size:1.5rem;margin-top:20px;transform:translateZ(40px);letter-spacing:-.01em;
+  }
+  .badge-role{
+    text-align:center;font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--gold);margin-top:8px;transform:translateZ(30px);
+  }
+  .badge-divider{height:1px;background:var(--line);margin:20px 0;transform:translateZ(15px)}
+  .badge-meta{transform:translateZ(28px);font-size:.82rem;color:var(--muted);display:grid;gap:9px}
+  .badge-meta div{display:flex;gap:10px;align-items:center}
+  .badge-meta b{color:var(--txt);font-weight:600}
+  .badge-id{
+    margin-top:auto;font-family:var(--mono);font-size:.62rem;color:var(--muted-2);
+    display:flex;justify-content:space-between;transform:translateZ(20px);letter-spacing:.1em;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:90px 0;position:relative}
+  .sec-head{margin-bottom:48px;max-width:62ch}
+  .sec-head p.lead{color:var(--muted);margin-top:18px;font-size:1.05rem}
+
+  /* tilt cards shared */
+  .tilt{
+    transform-style:preserve-3d;
+    transition:transform .18s ease-out, box-shadow .3s, border-color .3s;
+    will-change:transform;
+  }
+  .card{
+    background:linear-gradient(155deg,var(--card),#141B3A);
+    border:1px solid var(--line);
+    border-radius:18px;padding:30px;
+    box-shadow:0 24px 50px -28px rgba(0,0,0,.7);
+  }
+  .card .layer{transform:translateZ(34px)}
+  .card:hover{border-color:var(--peri-dim);box-shadow:0 36px 70px -28px rgba(0,0,0,.85)}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:760px){.about-grid{grid-template-columns:1fr}}
+  .about-grid .card h3{font-family:var(--display);font-size:1.3rem;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+  .about-grid .card h3 i{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+    background:rgba(255,200,87,.12);color:var(--gold);font-style:normal;font-size:1.1rem;
+  }
+  .about-grid .card p{color:var(--muted);font-size:.96rem}
+  .about-grid .card p + p{margin-top:14px}
+
+  /* SKILLS */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:860px){.skills-grid{grid-template-columns:1fr}}
+  .skill-num{font-family:var(--mono);font-size:.8rem;color:var(--gold);letter-spacing:.2em}
+  .skill-card h3{font-family:var(--display);font-size:1.25rem;margin:16px 0 12px;letter-spacing:-.01em}
+  .skill-card p{color:var(--muted);font-size:.92rem}
+  .skill-ico{
+    width:48px;height:48px;border-radius:13px;display:grid;place-items:center;
+    background:linear-gradient(140deg,var(--peri-dim),#2A3470);
+    box-shadow:0 12px 24px -10px rgba(78,99,199,.7);
+    margin-top:6px;
+  }
+  .skill-ico svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8}
+
+  /* EXPERIENCE TIMELINE */
+  .timeline{position:relative;margin-left:8px}
+  .timeline::before{
+    content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(var(--peri-dim),transparent);
+  }
+  .xp{position:relative;padding-left:42px;margin-bottom:26px}
+  .xp::before{
+    content:"";position:absolute;left:0;top:30px;width:16px;height:16px;border-radius:50%;
+    background:var(--bg-0);border:3px solid var(--gold);box-shadow:0 0 0 4px rgba(255,200,87,.12);
+  }
+  .xp .card{padding:26px 28px}
+  .xp-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline;margin-bottom:6px}
+  .xp-role{font-family:var(--display);font-size:1.22rem;font-weight:600}
+  .xp-co{color:var(--peri);font-weight:500}
+  .xp-when{font-family:var(--mono);font-size:.72rem;color:var(--muted);letter-spacing:.06em;white-space:nowrap}
+  .xp-where{font-family:var(--mono);font-size:.72rem;color:var(--muted-2);margin-bottom:14px;letter-spacing:.04em}
+  .xp p.sum{color:var(--muted);font-size:.94rem;margin-bottom:16px}
+  .xp ul{list-style:none;display:grid;gap:9px}
+  .xp ul li{position:relative;padding-left:22px;color:var(--muted);font-size:.92rem}
+  .xp ul li::before{content:"▸";position:absolute;left:0;color:var(--gold)}
+
+  /* STATS */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:860px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.stats-grid{grid-template-columns:1fr}}
+  .stat{
+    text-align:center;padding:34px 18px;
+  }
+  .stat .num{
+    font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+    font-size:clamp(2.6rem,5vw,3.4rem);
+    background:linear-gradient(120deg,var(--gold),#FFE3A8);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    line-height:1;
+  }
+  .stat .lbl{font-family:var(--display);font-weight:600;margin:10px 0 8px;font-size:1.02rem}
+  .stat .desc{color:var(--muted);font-size:.84rem}
+
+  /* EDUCATION */
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:760px){.edu-grid{grid-template-columns:1fr}}
+  .edu-card .deg{font-family:var(--mono);font-size:.72rem;color:var(--gold);letter-spacing:.16em;text-transform:uppercase}
+  .edu-card h3{font-family:var(--display);font-size:1.25rem;margin:10px 0 12px}
+  .edu-card p{color:var(--muted);font-size:.92rem}
+
+  /* CONTACT */
+  .contact-card{
+    background:
+      radial-gradient(700px 300px at 80% -20%, rgba(255,200,87,.10), transparent 60%),
+      linear-gradient(155deg,var(--card),#10162E);
+    border:1px solid var(--line);border-radius:24px;
+    padding:clamp(34px,5vw,60px);text-align:center;
+    box-shadow:0 40px 90px -40px rgba(0,0,0,.85);
+  }
+  .contact-card p.lead{color:var(--muted);max-width:60ch;margin:18px auto 34px}
+  .contact-methods{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+  .cm{
+    display:flex;flex-direction:column;gap:6px;align-items:center;
+    padding:20px 26px;border-radius:14px;border:1px solid var(--line);
+    background:rgba(255,255,255,.02);min-width:180px;text-decoration:none;color:var(--txt);
+    transition:transform .2s,border-color .25s,background .25s;
+  }
+  .cm:hover{transform:translateY(-4px);border-color:var(--gold);background:rgba(255,200,87,.05)}
+  .cm .cm-ico{font-size:1.4rem}
+  .cm .cm-k{font-family:var(--mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .cm .cm-v{font-weight:600;font-size:.9rem;word-break:break-all}
+
+  footer{padding:46px 0 40px;text-align:center;border-top:1px solid var(--line);margin-top:40px}
+  footer .brand{font-size:1.2rem;margin-bottom:8px}
+  footer p{color:var(--muted-2);font-size:.82rem}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(prefers-reduced-motion:reduce){
+    *{transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+    .badge,.tilt{transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="brand">Fawad <span>Ali</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#numbers">Results</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-shapes" id="shapes">
+    <div class="shape s1" data-depth="0.04"></div>
+    <div class="shape s2" data-depth="0.07"></div>
+    <div class="shape s3" data-depth="0.05"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">B2C Sales · Closing · Support</span>
+      <h1>I turn calls<br>into <span class="accent">closed deals.</span></h1>
+      <p class="hero-sub"><strong>Closer, Customer Support Specialist & B2C Sales Specialist</strong> at Prime BPO — Rawalpindi, Pakistan.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:slowedreverb0344@gmail.com">Get in touch →</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/imfawad-ali" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+    </div>
+
+    <div class="badge-stage">
+      <div class="badge" id="badge">
+        <div class="badge-face">
+          <div class="badge-clip"></div>
+          <div class="badge-photo">FA</div>
+          <div class="badge-name">Fawad Ali</div>
+          <div class="badge-role">Sales Closer</div>
+          <div class="badge-divider"></div>
+          <div class="badge-meta">
+            <div>📍 <span><b>Rawalpindi / Islamabad</b>, Pakistan</span></div>
+            <div>💼 <span><b>Prime BPO</b> · since Nov 2024</span></div>
+            <div>🎯 <span><b>95%</b> target achievement</span></div>
+          </div>
+          <div class="badge-id"><span>ID · CLOSER-001</span><span>B2C · B2B</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">About me</span>
+      <h2 class="section-title">A sales specialist who closes and keeps customers.</h2>
+      <p class="lead">Sales Specialist at Prime BPO with expertise in policy closures, sales operations, and post-sales support — managing customer calls, exceeding targets, and turning inquiries into lasting relationships.</p>
+    </div>
+    <div class="about-grid">
+      <div class="card tilt reveal">
+        <div class="layer">
+          <h3><i>◆</i> Who I am</h3>
+          <p>A Sales Specialist at Prime BPO focused on policy closures, sales operations, and post-sales support. I manage customer sales calls, consistently exceed targets, and address inquiries with care.</p>
+          <p>My ability to upsell and maintain detailed records has helped my team strengthen customer relationships and drive measurable results.</p>
+        </div>
+      </div>
+      <div class="card tilt reveal">
+        <div class="layer">
+          <h3><i>▶</i> What I do</h3>
+          <p>As a closer, I manage inbound and outbound calls, handle customer inquiries, and convert them into sales. My experience spans telemarketing, cold calling, and outbound prospecting.</p>
+          <p>I'm energised by collaborating with teams to deliver exceptional service across the B2B &amp; B2C sales domain, building on an Intermediate in Arts from Government College.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Core competencies</span>
+      <h2 class="section-title">Three skills behind every close.</h2>
+      <p class="lead">From the first conversation to the final sale — these are the foundation of how I work in B2C sales and customer support.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="card skill-card tilt reveal">
+        <div class="layer">
+          <div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+          <div class="skill-num" style="margin-top:18px">01</div>
+          <h3>Communication</h3>
+          <p>Clear, confident communication on every inbound inquiry and outbound call. I make sure every message lands and every concern is heard — building the trust that moves a conversation toward a close.</p>
+        </div>
+      </div>
+      <div class="card skill-card tilt reveal">
+        <div class="layer">
+          <div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+          <div class="skill-num" style="margin-top:18px">02</div>
+          <h3>Graphic Design</h3>
+          <p>A creative eye that complements my sales and support work — strengthening visual communication, brand presentation, and engagement across customer-facing materials.</p>
+        </div>
+      </div>
+      <div class="card skill-card tilt reveal">
+        <div class="layer">
+          <div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+          <div class="skill-num" style="margin-top:18px">03</div>
+          <h3>Exceeding Expectations</h3>
+          <p>I go beyond what customers anticipate — resolving issues quickly, upselling relevant products, and logging every interaction for a seamless experience that keeps them coming back.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2 class="section-title">Six+ years across BPO &amp; sales.</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="xp reveal">
+        <div class="card tilt"><div class="layer">
+          <div class="xp-top">
+            <div class="xp-role">Sales Specialist <span class="xp-co">· Prime BPO</span></div>
+            <div class="xp-when">Nov 2024 – Present · 1 yr 7 mo</div>
+          </div>
+          <div class="xp-where">Rawalpindi, Pakistan</div>
+          <p class="sum">As a closer, I contribute to policy closures while drawing on sales operations and post-sales support. I manage inbound and outbound calls, handle inquiries, and convert them into sales — with the upselling and record-keeping that drive team results.</p>
+          <ul>
+            <li>Policy closer managing inbound and outbound calls</li>
+            <li>Converting customer inquiries into closed sales</li>
+            <li>Telemarketing, cold calling, and outbound prospecting</li>
+            <li>Upselling additional products and services to existing customers</li>
+            <li>Maintaining detailed records of every interaction</li>
+            <li>Supporting sales processes to hit organizational goals</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="xp reveal">
+        <div class="card tilt"><div class="layer">
+          <div class="xp-top">
+            <div class="xp-role">Customer Service Representative <span class="xp-co">· Prime BPO</span></div>
+            <div class="xp-when">Nov 2022 – Aug 2024 · 1 yr 10 mo</div>
+          </div>
+          <div class="xp-where">Rawalpindi, Pakistan</div>
+          <p class="sum">Managed inbound and outbound sales calls while consistently exceeding monthly targets. Resolved issues efficiently, kept detailed records of every interaction, and upsold products and services that deepened customer relationships.</p>
+          <ul>
+            <li>Exceeded monthly sales targets through effective call management</li>
+            <li>Handled high-volume inbound &amp; outbound sales calls</li>
+            <li>Upsold products and services to drive revenue growth</li>
+            <li>Maintained detailed records for seamless follow-ups</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="xp reveal">
+        <div class="card tilt"><div class="layer">
+          <div class="xp-top">
+            <div class="xp-role">Customer Sales Representative <span class="xp-co">· All Star BPO LLC</span></div>
+            <div class="xp-when">Feb 2020 – Jul 2022 · 2 yr 6 mo</div>
+          </div>
+          <div class="xp-where">Customer service &amp; sales support</div>
+          <p class="sum">Provided exceptional service and sales support while managing 50+ corporate accounts. Built sales strategies that grew revenue 30%, mentored new team members, and launched a feedback system that lifted satisfaction scores.</p>
+          <ul>
+            <li>Managed a portfolio of 50+ corporate accounts</li>
+            <li>Developed sales strategies that increased revenue by 30%</li>
+            <li>Mentored new team members on sales techniques</li>
+            <li>Implemented a customer feedback system that improved satisfaction</li>
+            <li>Delivered consistent customer service and sales support</li>
+          </ul>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">By the numbers</span>
+      <h2 class="section-title">Impact &amp; results.</h2>
+      <p class="lead">From exceeding targets and growing revenue to reducing errors and managing large portfolios — a consistent focus on performance, efficiency, and customer satisfaction.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="card stat tilt reveal"><div class="layer">
+        <div class="num" data-count="95" data-suffix="%">0%</div>
+        <div class="lbl">Sales Target Achievement</div>
+        <div class="desc">Consistently exceeded monthly sales targets at Prime BPO, converting inbound and outbound calls into closed sales.</div>
+      </div></div>
+      <div class="card stat tilt reveal"><div class="layer">
+        <div class="num" data-count="30" data-suffix="%">0%</div>
+        <div class="lbl">Revenue Growth</div>
+        <div class="desc">Built sales strategies that increased revenue 30%, contributing directly to growth across a portfolio of corporate accounts.</div>
+      </div></div>
+      <div class="card stat tilt reveal"><div class="layer">
+        <div class="num" data-count="40" data-suffix="%">0%</div>
+        <div class="lbl">Error Reduction</div>
+        <div class="desc">Cut processing errors by 40% through improved verification, strengthening accuracy and efficiency on high-value accounts.</div>
+      </div></div>
+      <div class="card stat tilt reveal"><div class="layer">
+        <div class="num" data-count="50" data-suffix="+">0+</div>
+        <div class="lbl">Corporate Accounts</div>
+        <div class="desc">Managed a portfolio of 50+ corporate accounts spanning relationships, sales support, and account management.</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Education</span>
+      <h2 class="section-title">Academic foundation.</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="card edu-card tilt reveal"><div class="layer">
+        <div class="deg">Intermediate · Arts</div>
+        <h3>Government College</h3>
+        <p>Intermediate in Arts, bringing a solid educational foundation to my work in sales and customer support — and the communication skills to connect across diverse interactions.</p>
+      </div></div>
+      <div class="card edu-card tilt reveal"><div class="layer">
+        <div class="deg">Intermediate · Arts</div>
+        <h3>Board of Intermediate &amp; Secondary Education, Rawalpindi</h3>
+        <p>Completed Intermediate studies in Arts, establishing the academic groundwork that led to my FA in Arts at Government College.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="eyebrow" style="justify-content:center">Let's connect</span>
+      <h2 class="section-title" style="margin-top:14px">Ready to close your next deal.</h2>
+      <p class="lead">Whether you need a skilled closer, a customer support specialist, or a sales professional with a proven track record, I'm ready to contribute. My experience spans telemarketing, cold calling, outbound prospecting, policy closing, and customer relationship management across multiple BPO environments.</p>
+      <div class="contact-methods">
+        <a class="cm" href="mailto:slowedreverb0344@gmail.com">
+          <span class="cm-ico">📧</span><span class="cm-k">Email</span>
+          <span class="cm-v">slowedreverb0344@gmail.com</span>
+        </a>
+        <a class="cm" href="https://www.linkedin.com/in/imfawad-ali" target="_blank" rel="noopener">
+          <span class="cm-ico">💼</span><span class="cm-k">LinkedIn</span>
+          <span class="cm-v">in/imfawad-ali</span>
+        </a>
+        <div class="cm" style="cursor:default">
+          <span class="cm-ico">📍</span><span class="cm-k">Location</span>
+          <span class="cm-v">Islamabad, Pakistan</span>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="mailto:slowedreverb0344@gmail.com">Email Fawad →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Fawad <span style="color:var(--gold)">Ali</span></div>
+  <p>Closer · Customer Support Specialist · B2C Sales Specialist · Pakistan</p>
+</footer>
+
+<script>
+  // nav shadow
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 20));
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- reveal on scroll ----
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---- count up ----
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || '';
+      countIO.unobserve(el);
+      if (reduce){ el.textContent = end + suf; return; }
+      const dur = 1400, t0 = performance.now();
+      const step = (t) => {
+        const p = Math.min((t - t0) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(end * eased) + suf;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }, { threshold: .6 });
+  document.querySelectorAll('[data-count]').forEach(el => countIO.observe(el));
+
+  if (!reduce) {
+    // ---- hero badge 3D tilt (mouse) ----
+    const badge = document.getElementById('badge');
+    const stage = badge.parentElement;
+    stage.addEventListener('mousemove', (e) => {
+      const r = stage.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      badge.style.transform = `rotateY(${x * 26}deg) rotateX(${-y * 26}deg)`;
+    });
+    stage.addEventListener('mouseleave', () => badge.style.transform = 'rotateY(0) rotateX(0)');
+
+    // gentle idle float
+    let t = 0;
+    (function idle(){
+      if (!stage.matches(':hover')) {
+        t += .015;
+        badge.style.transform = `rotateY(${Math.sin(t)*6}deg) rotateX(${Math.cos(t*.8)*4}deg)`;
+      }
+      requestAnimationFrame(idle);
+    })();
+
+    // ---- hero parallax shapes ----
+    const shapes = [...document.querySelectorAll('#shapes .shape')];
+    addEventListener('mousemove', (e) => {
+      const cx = e.clientX / innerWidth - .5, cy = e.clientY / innerHeight - .5;
+      shapes.forEach(s => {
+        const d = +s.dataset.depth * 100;
+        s.style.transform = `translate(${cx * d}px, ${cy * d}px)`;
+      });
+    });
+
+    // ---- generic card tilt ----
+    document.querySelectorAll('.tilt').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5;
+        const y = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `perspective(900px) rotateY(${x * 9}deg) rotateX(${-y * 9}deg) translateZ(6px)`;
+      });
+      card.addEventListener('mouseleave', () => card.style.transform = 'perspective(900px) rotateY(0) rotateX(0)');
+    });
+  }
+</script>
+</body>
+</html>
